@@ -14,6 +14,7 @@ console.table ("Titulo:",filmes[0]);
 const sinopseTruman = "Sinopse: \nTruman Burbank (Jim Carrey) é um pacato vendedor de seguros que leva um vida simples com sua esposa Meryl Burbank (Laura Linney). Porém algumas coisas ao seu redor fazem com que ele passe a estranhar sua cidade, seus supostos amigos e até sua mulher. \nApós conhecer a misteriosa Lauren (Natascha McElhone), ele fica intrigado e acaba descobrindo que toda sua vida foi monitorada por câmeras e transmitida em rede nacional.";
 console.log(sinopseTruman);
 
+
 filmes [0]  = {
     Titulo: "Show de Truman",
     Ano: "30/10/1998",
@@ -21,16 +22,42 @@ filmes [0]  = {
     Duração:"1h 43min",
     Elenco:"Jim Carrey, Laura Linney, Natascha McElhone",
     Gênero:"Drama, Comédia",
-    Premição: false,
+    Premição: true,
     Idade:24
 }
+
+////////////////////////////////////////////////////
+
+// Semana 5 DOM
+
+// const tituloTruman = document.createElement('a')
+// const tiTruman = document.querySelector(".tituloTruman")
+// tituloTruman.href = "https://pt.wikipedia.org/wiki/Django_Unchained"
+// tituloTruman.tagName = "_blank"
+// tituloTruman.classList.add("tituloDjango")
+// tiTruman.insertAdjacentHTML("afterend", tituloTruman)
+
+
+const sinoTruman = document.getElementById("sinoTruman")
+sinoTruman.innerText = sinopseTruman
+
+/////////////////////////////////////////////////////
 console.table(filmes[0]);
 
 console.log("Titulo:",filmes[1]);
 
-const sinopseDjango = "Sinopse: \nDjango (Jamie Foxx) é um escravo liberto cujo passado brutal com seus antigos proprietários leva-o ao encontro do caçador de recompensas alemão Dr. King Schultz (Christoph Waltz). \nSchultz está em busca dos irmãos assassinos Brittle, e somente Django pode levá-lo a eles. \nO pouco ortodoxo Schultz compra Django com a promessa de libertá-lo quando tiver capturado os irmãos Brittle, vivos ou mortos.\nAo realizar seu plano, Schultz libera Django, embora os dois homens decidam continuar juntos. \nDesta vez, Schultz busca os criminosos mais perigosos do sul dos Estados Unidos com a ajuda de Django. \nDotado de um notável talento de caçador, Django tem como objetivo principal encontrar e resgatar Broomhilda (Kerry Washington), sua esposa, que ele não vê desde que ela foi adquirida por \noutros proprietários, há muitos anos.\nA busca de Django e Schultz leva-os a Calvin Candie (Leonardo DiCaprio), o dono de \"Candyland\", uma plantação famosa pelo treinador Ace Woody, que treina os escravos locais para a luta. \nAo explorarem o local com identidades falsas, Django e Schultz chamam a atenção de Stephen (Samuel L. Jackson), o escravo de confiança de Candie. \nOs movimentos dos dois começam a ser traçados, e logo uma perigosa organização fecha o cerco em torno de ambos. Para Django e Schultz conseguirem escapar com Broomhilda, eles terão que escolher entre independência e solidariedade, sacrifício e sobrevivência."
+const sinopseDjango = "Sinopse: \nDjango (Jamie Foxx) é um escravo liberto cujo passado brutal com seus antigos proprietários leva-o ao encontro do caçador de recompensas alemão Dr. King Schultz (Christoph Waltz). \nSchultz está em busca dos irmãos assassinos Brittle, e somente Django pode levá-lo a eles. \nO pouco ortodoxo Schultz compra Django com a promessa de libertá-lo quando tiver capturado os irmãos Brittle, vivos ou mortos.\nAo realizar seu plano, Schultz libera Django, embora os dois homens decidam continuar juntos. \nDesta vez, Schultz busca os criminosos mais perigosos do sul dos Estados Unidos com a ajuda de Django."
 
 console.log(sinopseDjango);
+
+////////////////////////////////////////////////////
+
+// Semana 5 DOM
+
+const sinoDjango = document.getElementById("sinoDjango")
+sinoDjango.innerText = sinopseDjango
+
+/////////////////////////////////////////////////////
 
 filmes [1]  = {
     Titulo: "Django Livre",
@@ -49,6 +76,16 @@ console.log("Titulo:",filmes[2]);
 const sinopseOitoOdiado = "Durante uma nevasca, o carrasco John Ruth (Kurt Russell) está transportando uma prisioneira, a famosa Daisy Domergue (Jennifer Jason Leigh), que ele espera trocar por grande quantia de dinheiro. \nNo caminho, os viajantes aceitam transportar o caçador de recompensas Marquis Warren (Samuel L. Jackson), que está de olho em outro tesouro, e o xerife Chris Mannix (Walton Goggins), prestes a ser empossado em sua cidade. \nComo as condições climáticas pioram, eles buscam abrigo no Armazém da Minnie, onde quatro outros desconhecidos estão abrigados. \nAos poucos, os oito viajantes no local começam a descobrir os segredos sangrentos uns dos outros, levando a um inevitável confronto entre eles."
 
 console.log(sinopseOitoOdiado);
+
+////////////////////////////////////////////////////
+
+// Semana 5 DOM
+
+const sinoOdiados = document.getElementById("sinoOdiados")
+sinoOdiados.innerText = sinopseOitoOdiado
+
+/////////////////////////////////////////////////////
+
 filmes [2]  = {
     Titulo: "Os Oito Odiados",
     Ano: "16/01/2016",
@@ -81,9 +118,11 @@ const somaIdade = filmes[0].Idade + filmes[1].Idade + filmes[2].Idade ===39;
 console.log("A soma de idades dos filmes é = 39 ?:",somaIdade);
 
 // 5. Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings.
-const novoItem1 = filmes[0].Apenas_maior_18  = false;
-const novoItem2 = filmes[1].Apenas_maior_18  = true;
-const novoItem3 = filmes[2].Apenas_maior_18  = true;
+const novoItem1 = filmes[0].listaDePremios = ["Globo de Ouro 1999", "Oscar 1999", "MTV Movie & TV 1999"]
+const novoItem2 = filmes[1].listaDePremios = ["MTV Movie & TV 2013", "BAFTA de cinema 2013", "Globo de Ouro 2013"]
+const novoItem3 = filmes[2].listaDePremios = ["Oscar 2016", " Globo de Ouro 2016 ", "Bandung Filme Festival 2016"]
+console.log(filmes)
+
 
 
 // 6. Exiba um relatório utilizando console.log(), mostrando todos os dados de cada um dos itens criados até aqui
@@ -104,18 +143,102 @@ filmes[2].Premição=true;
 
 if(filmes[0].Premição ){
     filmes[0].verificaçao="concluida"
-}else{filmes[0].verificaçao=alert("novo item não foi adcionado ao SHOW DE TRUMAN")};
+}else{alert("novo item não foi adcionado ao SHOW DE TRUMAN")};
 
 if(filmes[1].Premição ){
     filmes[1].verificaçao="concluida"
-}else{filmes[1].verificaçao=alert("novo item não foi adcionado ao DJANGO LIVRE")};
+}else{alert("novo item não foi adcionado ao DJANGO LIVRE")};
 
 if(filmes[2].Premição ){
     filmes[2].verificaçao="concluida"
-}else{filmes[2].verificaçao=alert("novo item não foi adcionado ao OS OITO ODIADOS")};
+}else{alert("novo item não foi adcionado ao OS OITO ODIADOS")};
 
 console.table(filmes[0]);
 console.table(filmes[1]);
 console.table(filmes[2]);
+
+// Semana 3 ----------------------------------------------------------------------------------
+// Semana 3 EXE 1:
+
+//1. Reescrevendo o relatório criado que foi feito na semana 1,
+// altere a forma que a característica do tipo array dos itens 
+// seja escrita como um laço que guarde todos os valores da propriedade array do objeto em uma mesma string. 
+// Utilize esta string no relatório.
+
+let topPremiacao = ""
+
+for (let i in novoItem1){
+    topPremiacao = novoItem1 + i + ""
+}
+
+console.log(topPremiacao)
+console.log(typeof topPremiacao)
+
+// Semana 3 EXE 2:
+
+//2. Ainda no relatório, altere-o para que ele seja criado utilizando laços.
+// Ou seja, você não deve mais imprimir individualmente cada item do relatório.
+// Cada item deve ser exibido a partir de uma iteração do laço. Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
+
+for (topicos of filmes ){
+    for (propriedadesTop in topicos){
+        console.log(` ${propriedadesTop}: ${topicos[propriedadesTop]}`)
+        
+    }
+    
+}
+
+
+
+//SEMANA 3 EXE 3:
+//3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
+
+let retorno = ""
+
+const relatorio = () =>{
+    for (let i of filmes){
+        // console.log(`${i.listaDePremios}`)
+        retorno = i.listaDePremios + ""
+    }           
+    return retorno
+
+}
+console.log(relatorio())
+
+
+//SEMANA 3 EXE 4:
+// Crie uma função que recebe um array de objetos e uma string. 
+// Esta função deve retornar um objeto, e o objeto retornado deve
+// possuir apenas os itens que tenham o nome/título igual à string 
+// passada como parâmetro.Caso não exista um item, exiba um ALERT 
+// indicando que nenhum item foi encontrado.
+
+
+
+
+// filmes.forEach((filme, index) =>{
+//     console.log(index ,filme)
+// })
+
+const titulos = [
+    {Titulo: "Django Livre"}, 
+    {Titulo: "Os Oito Odiados"}, 
+    {Titulo: "O Show de Truman"} 
+]
+
+const retornaObj = function (titulos, Titulo) {
+    for (let i in titulos){
+        if (titulos[i].Titulo === Titulo){
+            return (titulos[i].Titulo)
+        }else{
+            return alert("item não encontrado")
+        }     
+    }
+}
+console.log(retornaObj(titulos, "Django Livre" ))
+
+
+
+console.log(filmes[0].Titulo)
 
 

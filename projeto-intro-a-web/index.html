@@ -5,9 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;600&family=Playfair+Display&family=Rubik+Spray+Paint&family=Signika+Negative:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- <script src="index.js" defer></script> -->
+    <!-- <script src="/semana1.js" defer></script> -->
+    <script src="/semana2.js" defer></script>
+    <!-- <script src="/semana3.js" defer></script> -->
 </head>
 <body>
+    <div>
+        <header>
+            <div class="logo">Labenuflix</div>
+            <div class="pesquisa">
+                <label for="pesquisa"></label>
+                <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar">
+                <button>Buscar</button>
+            </div>
+            <div class="filme">Filmes</div>
+            <div class="serie">Series</div>
+            <div class="doc">Documentarios</div>            
+        </header>
+        <main>
+            <figure class="img1">
+               <img class="trumanImg" src="./imag/truman1.jpg" alt="capa-truman">
+               <ul>
+                <li id="tituloTruman" class="tituloTruman"> Titulo: <a href="https://pt.wikipedia.org/wiki/The_Truman_Show" target="_blank"> O Show de Truman </a></li>
+                <br>
+                <li id="sinoTruman"></li>
+               </ul>
+
+            </figure>
+            <figure class="img2">
+               <img class="djangoImg" src="./imag/django1.jpg" alt="capa-django">
+               <ul>
+                <li id="tituloDjango"> Titulo: <a href="https://pt.wikipedia.org/wiki/Django_Unchained" target="_blank">Django Livre</a>
+                </li>
+                <br>
+                <li id="sinoDjango"></li>
+               </ul>
+
+            </figure>
+            <figure class="img3">
+                <img class="odiadosImg" src="./imag/os-oito-odiados1.jpg" alt="os-oito-odiados">
+                <ul>
+                    <li> Titulo: <a href="https://pt.wikipedia.org/wiki/Os_Oito_Odiados" target="_blank">Os Oito Odiados</a></li>
+                    <br>
+                    <li id="sinoOdiados"></li>
+                </ul>
+
+            </figure>
+
+
+           
+
+           
+
+        </main>
+        <footer>
+            <p>ola sou o footer e tenho varias informações </p>
+        </footer>
+    </div>
     
 </body>
 </html>
