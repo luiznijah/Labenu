@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Martian Mono', monospace; */
+    font-family: 'Playfair Display', serif;
+
+}
+
+@media screen and (min-device-width : 120px) and (max-device-width : 480px) {
+    /* celulares */
+    body{
+        height: 2000px;
+    }
+    header  {
+        padding: 5vw;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: black;
+        width: 100vw;
+        display: flex;
+        align-items: baseline;
+        gap: 5%;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .pesquisa {
+        grid-row: 2 / 2;
+        align-self: end;
+    }
+    
+    .logo{
+        color: red;
+        font-size: max(25px , 4vw);
+    
+    }
+    
+    
+    main{
+        padding: 0px 8px;
+        padding-top: 2%;
+        background-color: rgb(56, 55, 55);
+        height: 2300px;
+        display: grid;
+        gap: 10px;
+    
+    }
+    
+    .img1  {
+        color: white;
+        width: 90vw;
+        column-gap: 10px;
+    }
+    .img2  {
+        color: white;
+        width: 90vw;
+        column-gap: 10px;
+    }
+    .img3  {
+        color: white;
+        width: 90vw;
+        column-gap: 10px;
+    }
+
+    .trumanImg{
+        max-height: 40vh;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        padding: 8px;
+        box-shadow: 0px 0px 15px rgba(123, 122, 122, 0.784);
+        
+    }
+    
+    .djangoImg {
+        max-height: 40vh;
+        display: block;
+        margin: auto;
+        padding: 8px;
+        box-shadow: 0px 0px 15px rgba(123, 122, 122, 0.784);
+        margin-bottom: 20px;
+    
+    }
+    
+    .odiadosImg {
+        max-height: 40vh;
+        display: block;
+        margin: auto;
+        padding: 8px;
+        box-shadow: 0px 0px 15px rgba(123, 122, 122, 0.784);
+        margin-bottom: 20px;
+    
+    }
+    
+    footer {
+        height: 2vh;
+        margin-left: 10px;
+    
+    }
+
+    .pesquisa{
+        display:  flex;
+        gap: 2px;
+    }
+
+    input{
+        min-width: 16vw;
+    }
+    a{
+        color: blue;
+    }
+
+}
+
+
+@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
+    /* tablets */
+    header  {
+    padding: 5px 5px;    
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    color: white;
+    }
+
+    .logo{
+        color: red;
+        font-size: max(25px , 5vw);
+
+
+    }
+
+    a{
+        color: blue;
+    }
+
+    .img1  {
+        display: flex;
+        color: white;
+        width: 90vw;
+        column-gap: 10px;
+    }
+    .img2  {
+        display: flex;
+        color: white;
+        width: 90vw;
+        column-gap: 10px;
+    }
+    .img3  {
+        display: flex;
+        color: white;
+        width: 90vw;
+        column-gap: 10px;
+    }
+
+
+    main{
+        padding-top: 2%;
+        background-color: rgb(56, 55, 55);
+        height: 1500px;
+        display: grid;
+        gap: 10px;
+
+    }
+    .trumanImg{
+        max-height: 30vh;
+        box-shadow: 0px 0px 15px rgba(123, 122, 122, 0.784);
+        margin-left: 10px;
+    }
+
+    .djangoImg {
+        max-height: 30vh;
+        box-shadow: 0px 0px 15px rgba(123, 122, 122, 0.784);
+        margin-left: 10px;
+
+    }
+
+    .odiadosImg {
+        max-height: 30vh;
+        box-shadow: 0px 0px 15px rgba(123, 122, 122, 0.784);
+        margin-left: 10px;
+
+    }
+
+    footer {
+        height: 2vh;
+        margin-left: 10px;
+
+    }
+
+    .pesquisa{
+        display:  flex;
+    }
+
+    input{
+        margin-right: 5px;
+        min-width: 12vw;        
+    }
+    }
+
+    @media screen and (min-device-width : 801px) {
+        /* computadores */
+        
+        header  {
+            padding: 5px 5px;            
+            background-color: black;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            gap: 5%;
+            color: white;
+        }
+        
+        .logo{
+            color: red;
+            font-size: min(30px , 5vw);
+        
+        
+        }
+        
+        
+        a{
+            color: blue;
+            
+        }
+        li{
+            font-size: 70%;
+        }
+
+        .img1  {
+            display: flex;
+            color: white;
+            max-width: 80vw;
+            column-gap: 10px;
+        }
+        .img2  {
+            display: flex;
+            color: white;
+            max-width: 80vw;
+            column-gap: 10px;
+        }
+        .img3  {
+            display: flex;
+            color: white;
+            max-width: 80vw;
+            column-gap: 10px;
+        }
+        
+        main{
+            padding-top: 2%;
+            background-color: rgb(56, 55, 55);
+            height: 1700px;
+            display: grid;
+            gap: 10px;
+            font-size: 25px;
+        
+        }
+        .trumanImg{
+            max-height: 40vh;
+            box-shadow: 0px 0px 15px rgba(123, 122, 122, 0.784);
+            margin-left: 10px;
+        }
+        
+        .djangoImg {
+            max-height: 40vh;
+            box-shadow: 0px 0px 15px rgba(123, 122, 122, 0.784);
+            margin-left: 10px;
+        
+        }
+        
+        .odiadosImg {
+            max-height: 40vh;
+            box-shadow: 0px 0px 15px rgba(123, 122, 122, 0.784);
+            margin-left: 10px;
+        
+        }
+        
+        
+        footer {
+            height: 2vh;
+            margin-left: 10px;
+        
+        }
+        }
+
+        .pesquisa{
+            display:  flex;
+            gap: 2px;
+        }
+
+        input{
+            width: 7vw;
+        }
+
+        

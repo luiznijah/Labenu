@@ -1,0 +1,244 @@
+// 2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
+const filmes = []
+// 3. Adicione os objetos criados no item 1, ao array de objetos criado no item 2, utilizando o push() .
+filmes.push("Show de Truman",
+"Django Livre",
+"Os Oito Odiados");
+console.table(filmes)
+
+
+
+// 2. Agora, crie três conjuntos de variáveis utilizando as características que você definiu acima. Lembre-se que deve ser o mesmo tipo de item, com três conjuntos de dados diferentes.
+console.table ("Titulo:",filmes[0]);
+
+const sinopseTruman = "Sinopse: \nTruman Burbank (Jim Carrey) é um pacato vendedor de seguros que leva um vida simples com sua esposa Meryl Burbank (Laura Linney). Porém algumas coisas ao seu redor fazem com que ele passe a estranhar sua cidade, seus supostos amigos e até sua mulher. \nApós conhecer a misteriosa Lauren (Natascha McElhone), ele fica intrigado e acaba descobrindo que toda sua vida foi monitorada por câmeras e transmitida em rede nacional.";
+console.log(sinopseTruman);
+
+
+filmes [0]  = {
+    Titulo: "Show de Truman",
+    Ano: "30/10/1998",
+    Direçao:"Peter Weir",
+    Duração:"1h 43min",
+    Elenco:"Jim Carrey, Laura Linney, Natascha McElhone",
+    Gênero:"Drama, Comédia",
+    Premição: true,
+    Idade:24
+}
+
+////////////////////////////////////////////////////
+
+// Semana 5 DOM
+
+// const tituloTruman = document.createElement('a')
+// const tiTruman = document.querySelector(".tituloTruman")
+// tituloTruman.href = "https://pt.wikipedia.org/wiki/Django_Unchained"
+// tituloTruman.tagName = "_blank"
+// tituloTruman.classList.add("tituloDjango")
+// tiTruman.insertAdjacentHTML("afterend", tituloTruman)
+
+
+const sinoTruman = document.getElementById("sinoTruman")
+sinoTruman.innerText = sinopseTruman
+
+/////////////////////////////////////////////////////
+console.table(filmes[0]);
+
+console.log("Titulo:",filmes[1]);
+
+const sinopseDjango = "Sinopse: \nDjango (Jamie Foxx) é um escravo liberto cujo passado brutal com seus antigos proprietários leva-o ao encontro do caçador de recompensas alemão Dr. King Schultz (Christoph Waltz). \nSchultz está em busca dos irmãos assassinos Brittle, e somente Django pode levá-lo a eles. \nO pouco ortodoxo Schultz compra Django com a promessa de libertá-lo quando tiver capturado os irmãos Brittle, vivos ou mortos.\nAo realizar seu plano, Schultz libera Django, embora os dois homens decidam continuar juntos. \nDesta vez, Schultz busca os criminosos mais perigosos do sul dos Estados Unidos com a ajuda de Django."
+
+console.log(sinopseDjango);
+
+////////////////////////////////////////////////////
+
+// Semana 5 DOM
+
+const sinoDjango = document.getElementById("sinoDjango")
+sinoDjango.innerText = sinopseDjango
+
+/////////////////////////////////////////////////////
+
+filmes [1]  = {
+    Titulo: "Django Livre",
+    Ano: "18/02/2013",
+    Direçao:"Quentin Tarantino",
+    Duração:"2h 44min",
+    Elenco:" Jamie Foxx, Christoph Waltz, Leonardo DiCaprio",
+    Gênero:"Faroeste",
+    Premição: true,
+    Idade:9
+}
+console.table(filmes[1]);
+
+console.log("Titulo:",filmes[2]);
+
+const sinopseOitoOdiado = "Durante uma nevasca, o carrasco John Ruth (Kurt Russell) está transportando uma prisioneira, a famosa Daisy Domergue (Jennifer Jason Leigh), que ele espera trocar por grande quantia de dinheiro. \nNo caminho, os viajantes aceitam transportar o caçador de recompensas Marquis Warren (Samuel L. Jackson), que está de olho em outro tesouro, e o xerife Chris Mannix (Walton Goggins), prestes a ser empossado em sua cidade. \nComo as condições climáticas pioram, eles buscam abrigo no Armazém da Minnie, onde quatro outros desconhecidos estão abrigados. \nAos poucos, os oito viajantes no local começam a descobrir os segredos sangrentos uns dos outros, levando a um inevitável confronto entre eles."
+
+console.log(sinopseOitoOdiado);
+
+////////////////////////////////////////////////////
+
+// Semana 5 DOM
+
+const sinoOdiados = document.getElementById("sinoOdiados")
+sinoOdiados.innerText = sinopseOitoOdiado
+
+/////////////////////////////////////////////////////
+
+filmes [2]  = {
+    Titulo: "Os Oito Odiados",
+    Ano: "16/01/2016",
+    Direçao:"Quentin Tarantino",
+    Duração:"2h 48min",
+    Elenco:"Samuel L. Jackson, Kurt Russell, Jennifer Jason Leigh",
+    Gênero:"Faroeste",
+    Premição: true,
+    Idade: 6
+    
+}
+console.table(filmes[2]);
+
+
+const anoTruman = filmes[0].Idade;
+console.log("Idade do filme Show de Truman:",anoTruman,"anos.");
+
+const anoDjango = filmes[1].Idade;
+console.log("Idade do filme Django Livre:",anoDjango,"anos.");
+
+const anoOitoOdiados = filmes[2].Idade;
+console.log("Idade do filme Os Oito Odiados",anoOitoOdiados,"anos");
+
+// 3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log. Guarde este valor em uma const;
+const media = ((anoTruman+anoDjango+anoOitoOdiados)/3);
+console.log("A media de idade entre os filmes é de:\n"+media,"anos");
+
+// 4. Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras.
+const somaIdade = filmes[0].Idade + filmes[1].Idade + filmes[2].Idade ===39;
+console.log("A soma de idades dos filmes é = 39 ?:",somaIdade);
+
+// 5. Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings.
+const novoItem1 = filmes[0].listaDePremios = ["Globo de Ouro 1999", "Oscar 1999", "MTV Movie & TV 1999"]
+const novoItem2 = filmes[1].listaDePremios = ["MTV Movie & TV 2013", "BAFTA de cinema 2013", "Globo de Ouro 2013"]
+const novoItem3 = filmes[2].listaDePremios = ["Oscar 2016", " Globo de Ouro 2016 ", "Bandung Filme Festival 2016"]
+console.log(filmes)
+
+
+
+// 6. Exiba um relatório utilizando console.log(), mostrando todos os dados de cada um dos itens criados até aqui
+
+//   1. O log deve exibir o dado de nome, título ou afim sempre em LETRAS MAIÚSCULAS, como no exemplo abaixo.
+filmes[0].Titulo = filmes[0].Titulo.toUpperCase();
+console.table(filmes[0]);
+ filmes[1].Titulo = filmes[1].Titulo.toUpperCase();
+ console.table(filmes[1]);
+ filmes[2].Titulo = filmes[2].Titulo.toUpperCase();
+ console.table(filmes[2]);
+
+
+//  4. Altere o item 3 “Adicione os novos objetos no array de objetos, utilizando o push()”, para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
+//  5. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push
+
+filmes[2].Premição=true;
+
+if(filmes[0].Premição ){
+    filmes[0].verificaçao="concluida"
+}else{alert("novo item não foi adcionado ao SHOW DE TRUMAN")};
+
+if(filmes[1].Premição ){
+    filmes[1].verificaçao="concluida"
+}else{alert("novo item não foi adcionado ao DJANGO LIVRE")};
+
+if(filmes[2].Premição ){
+    filmes[2].verificaçao="concluida"
+}else{alert("novo item não foi adcionado ao OS OITO ODIADOS")};
+
+console.table(filmes[0]);
+console.table(filmes[1]);
+console.table(filmes[2]);
+
+// Semana 3 ----------------------------------------------------------------------------------
+// Semana 3 EXE 1:
+
+//1. Reescrevendo o relatório criado que foi feito na semana 1,
+// altere a forma que a característica do tipo array dos itens 
+// seja escrita como um laço que guarde todos os valores da propriedade array do objeto em uma mesma string. 
+// Utilize esta string no relatório.
+
+let topPremiacao = ""
+
+for (let i in novoItem1){
+    topPremiacao = novoItem1 + i + ""
+}
+
+console.log(topPremiacao)
+console.log(typeof topPremiacao)
+
+// Semana 3 EXE 2:
+
+//2. Ainda no relatório, altere-o para que ele seja criado utilizando laços.
+// Ou seja, você não deve mais imprimir individualmente cada item do relatório.
+// Cada item deve ser exibido a partir de uma iteração do laço. Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
+
+for (topicos of filmes ){
+    for (propriedadesTop in topicos){
+        console.log(` ${propriedadesTop}: ${topicos[propriedadesTop]}`)
+        
+    }
+    
+}
+
+
+
+//SEMANA 3 EXE 3:
+//3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
+
+let retorno = ""
+
+const relatorio = () =>{
+    for (let i of filmes){
+        // console.log(`${i.listaDePremios}`)
+        retorno = i.listaDePremios + ""
+    }           
+    return retorno
+
+}
+console.log(relatorio())
+
+
+//SEMANA 3 EXE 4:
+// Crie uma função que recebe um array de objetos e uma string. 
+// Esta função deve retornar um objeto, e o objeto retornado deve
+// possuir apenas os itens que tenham o nome/título igual à string 
+// passada como parâmetro.Caso não exista um item, exiba um ALERT 
+// indicando que nenhum item foi encontrado.
+
+
+
+
+// filmes.forEach((filme, index) =>{
+//     console.log(index ,filme)
+// })
+
+const titulos = [
+    {Titulo: "Django Livre"}, 
+    {Titulo: "Os Oito Odiados"}, 
+    {Titulo: "O Show de Truman"} 
+]
+
+const retornaObj = function (titulos, Titulo) {
+    for (let i in titulos){
+        if (titulos[i].Titulo === Titulo){
+            return (titulos[i].Titulo)
+        }else{
+            return alert("item não encontrado")
+        }     
+    }
+}
+console.log(retornaObj(titulos, "Django Livre" ))
+
+
+
+console.log(filmes[0].Titulo)
+
+
